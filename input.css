@@ -41,6 +41,8 @@ body {
   width: 24px;
   height: 2px;
   background: black;
+  transform: rotate(0);
+  transition: all 0.5s;
 }
 
 .hamburger-middle {
@@ -59,10 +61,10 @@ body {
 .open .hamburger-top {
   transform: rotate(45deg) translateY(6px) translate(6px);
 }
-
 .open .hamburger-middle {
-  display: none;
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
+
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
